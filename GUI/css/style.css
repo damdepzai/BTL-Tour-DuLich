@@ -1,0 +1,167 @@
+﻿*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*style css header*/
+button.btn.btn-primary {
+    color: #ffffff;
+    background-color: #dd4814;
+    border-color: #dd4814;
+    margin: 0px;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #ae3910;
+    color: white;
+    border-color: #dd4814;
+}
+
+div#header {
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    display: flex;
+}
+.search-info {
+    position: relative;
+    top: 39%;
+    padding-left: 50px;
+}
+
+.search-info input {
+    width: 300px;
+    line-height: 34px;
+    padding-left: 10px;
+    outline: none;
+}
+
+#header .logo {
+    padding-left: 56px;
+    padding-top: 10px;
+}
+/*style css menu */ 
+ul{
+    margin:0px;
+    padding:0px;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;;
+}
+#menu {
+    background: #e27a1a;
+    height: 50px;
+    width: 100%;
+    z-index: 20;
+}
+#menu > ul > li{
+    float: left;
+    position: relative;
+    border-right: 1px solid gray;
+    padding-right: 20px;
+    padding-left:20px;
+  
+}
+#menu > ul > li > a{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+   
+    line-height: 50px;
+    text-decoration: none;
+}
+#menu ul ul{
+    position: absolute;
+    visibility: hidden;
+    z-index: 2;
+}
+#menu ul ul li{
+    width: 200px;
+    background: #e27a1a;
+    border-bottom: 1px solid gray;
+    line-height: 50px;
+}
+#menu ul ul li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+#menu ul li:hover{
+    background: gray;
+    transition: all 0.5s;
+}
+#menu ul li:hover ul{
+    visibility: visible;
+    transition: all 0.6s;
+    left:0px;
+}
+#menu > ul > li:nth-child(1){
+    padding-left: 50px;
+}
+#menu > ul > li:nth-child(8){
+    border-right: none;
+}
+/*style css slide*/
+#slide{
+   margin-top: 10px;
+}
+/*style css content*/
+#content{
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+}
+p.simple-img {
+    padding-left: 110px;
+    padding-bottom: 22px;
+}
+
+#footer .phan2 h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#footer .phan1 {
+    min-height: 166px;
+}
+
+.phan1-img {
+    display: flex;
+}
+
+.images-logo {
+    margin: 21px;
+}
+
+#footer .phan1 h1 {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.phan2 {color: #A9A9A9;}
+
+p.text-gray-bold {
+    font-weight: bold;
+}
+
+p.text-gray-bold span {font-weight: 100;}
+
+div#footer {
+    background: #333;
+    color: white;
+}
+.footer-end{
+    text-align: center;
+}

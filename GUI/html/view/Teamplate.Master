@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Teamplate.master.cs" Inherits="GUI.Teamplate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script type="text/javascript" src="../../vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="../../javascipt/javascript.js"></script>
+    <link rel="stylesheet" href="../../vendor/bootstrap.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Tour Du Lịch </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <div id="header">
+        <div class="logo">
+            <img src="../../images/logo.png " width="200px" height="75px !important;" alt="Logo của website">
+        </div>
+        <div class="search-info">
+            <input type="text" name="thongtin" />
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </div>
+    <!-- end header -->
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tour trong nước</a>
+                <ul>
+                    <li><a href="#">Miền Bắc</a></li>
+                    <li><a href="#">Miền Nam</a></li>
+                    <li><a href="#">Miền Trung</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tour nước ngoài</a>
+                <ul>
+                    <li><a href="#">Trung quốc</a></li>
+                    <li><a href="#">Hàn quốc</a></li>
+                    <li><a href="#">Nhật bản</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin Tức</a></li>
+            <li><a href="#">Đặt Phòng</a></li>
+            <li><a href="#">Lịch tour</a></li>
+            <li><a href="#">Liên hệ</a></li>
+
+        </ul>
+    </div>
+    <!-- end menu -->
+    <div id="slide">
+            <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="../../images/silde/slider01.jpg" />
+                       
+                    </div>
+                    <div class="item">
+                        <img src="../../images/silde/slide02.jpg" />
+                    </div>
+                    <div class="item active">
+                        <img src="../../images/silde/slide04.jpg" />
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span
+                        class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span
+                        class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+    </div>
+    <!-- end slide -->
+    <div id="content">
+          <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- end content -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class=" col-md-4 col-lg-4">
+                    <div class="phan1">
+                        <h1>Góc khách hàng</h1>
+                        <p>Giới thiệu</p>
+                        <p>Giấy phép lữ hành</p>
+                        <p>Chính sách bảo mật thông tin</p>
+                        <p>Liên hệ</p>
+                    </div>
+                    <div class="phan2">
+                        <h3>Công ty CP đầu tư vận tải du lịch hoàng việt</h3>
+                        <p class="text-gray-bold">Người đại điện :<span>(ông) Vũ Quyểt Thắng</span></p>
+                        <p class="text-gray-bold">Trụ sở ĐKKD:<span> Số 62 ,Trần Quốc Toản ,P. Trần Hưng Đạo , Q. Hoàn
+                                Kiếm, Hà Nội</span></p>
+                        <p class="text-gray-bold">Điện thoại: <span>0243 719 2328 - Hotline: 0983 968 365 - Email:
+                                thangthomas@hoangviettravel.vn </span></p>
+                    </div>
+                </div>
+                <!--end col 4-->
+                <div class=" col-md-4 col-lg-4">
+                    <div class="phan1">
+                        <h1>Tin tức</h1>
+                        <p>Bản tin du lịch trong nước</p>
+                        <p>Bản tin du lịch ngoài nước</p>
+                        <p>Chỉ đường ( bản đồ)</p>
+
+                    </div>
+                    <div class="phan2">
+                        <h3>VĂN PHÒNG ĐÀ NẴNG</h3>
+                        <p class="text-gray-bold">Nguyễn Thị Minh Khai, Q. Hải Châu, TP. Đà Nẵng </p>
+                        <p class="text-gray-bold">Điện thoại: 05113 886 552; Fax: 05113 886 559</p>
+
+                    </div>
+                </div>
+                <!--end col 4-->
+                <div class=" col-md-4 col-lg-4">
+                    <div class="phan1 ">
+                        <div class="phan1-img">
+                            <p class="images-logo"> <img src="../../images/logo.png" width="100px" height="70px" alt="" /></p>
+                            <p class="images-logo"> <img src="../../images/logo-2.png" width="150px" height="70px" alt="" /></p>
+                        </div>
+
+                        <p class="simple-img"><img src="../../images/logo-1.png" width="50px" height="50px" alt="" /></p>
+                    </div>
+
+                    <div class="phan2">
+                        <h3>CƠ SỞ KINH DOANH</h3>
+                        <p class="text-gray-bold">Cơ Sở Yên Phụ : Tầng 3+4, 62A phố Yên Phụ (Yên Phụ nhỏ), quận Tây Hồ,
+                            Hà Nội</p>
+                        <p class="text-gray-bold">Điện thoại: 024 - 3824 7555</p>
+                        <p class="text-gray-bold">Cơ Sở Hồng Hà : 93 Hồng Hà, Ba Đình , Hà Nội</p>
+                        <p class="text-gray-bold">Cơ Sở Hồng Hà : 93 Hồng Hà, Ba Đình , Hà Nội</p>
+                    </div>
+                </div>
+                <!--end col 4-->
+
+            </div><!--end row-->
+            <p class="footer-end">Tour Du Lịch Hoàng Việt Travel 2017 - Du Lịch trong nước 2017 - Du Lịch nước ngoài 2017 - Công ty Du lịch Hoàng Việt Travel - Du lịch Châu Á 2017</p>
+            <p class="footer-end">Giấy phép kinh doanh Lữ hành Quốc tế số: 01 - 220/2015/TCDL- GP LHQT . Thành viên của: Hiệp hội du lịch Việt Nam (VITA) , Hiệp hội du lịch Châu Á - Thái Bình Dương (PATA) ,  Câu lạc bộ Lữ hành UNESCO Hà Nội</p>
+        </div><!--end container footer-->
+    </div>
+    <!-- end footer -->
+      
+    </div>
+    </form>
+</body>
+</html>
